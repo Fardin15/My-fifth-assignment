@@ -31,30 +31,46 @@
     />
   </head>
   <body>
-    <!-- navbar starts here -->
-    <nav class="bg-white container mx-auto">
-      <div class="navbar">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+    <header>
+      <!-- navbar starts here -->
+      <nav class="bg-white container mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
             </div>
+            <a
+              class="btn btn-ghost text-xl raleway font-extrabold text-[#030712]"
+              >M-Travels</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex mr-[250px]">
             <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu menu-horizontal px-1 raleway font-medium text-[#030712B3] opacity-75"
             >
               <li><a>Home</a></li>
               <li><a>About</a></li>
@@ -62,28 +78,31 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl raleway font-extrabold text-[#030712]"
-            >M-Travels</a
+          <div
+            class="space-x-3 py-4 px-7 bg-[#1DD1001A] min-w-28 rounded-2xl border-2 border-lime-300 h-[56px]"
           >
+            <p class="text-[#1DD100] font-bold">Bus</p>
+            <img class="w-5 h-4" src="./images/bus-logo.png" alt="bus-logo" />
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex mr-[250px]">
-          <ul
-            class="menu menu-horizontal px-1 raleway font-medium text-[#030712B3] opacity-75"
-          >
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Destination</a></li>
-            <li><a>Search</a></li>
-          </ul>
+      </nav>
+      <!-- navbar ends here -->
+    </header>
+    <main>
+      <!-- banner section starts here -->
+      <section
+        class="bg-[url(./images/banner.png)] bg-cover bg-no-repeat bg-center container mx-auto min-h-screen"
+      >
+        <div class="flex flex-col justify-center items-center">
+          <h1>End-to-End Travel with <span>M Paribahan</span></h1>
+          <p>
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+          <button class="btn btn-accent">Buy Tickets</button>
         </div>
-        <div
-          class="space-x-3 py-4 px-7 bg-[#1DD1001A] min-w-28 rounded-2xl border-2 border-lime-300 h-[56px]"
-        >
-          <p class="text-[#1DD100] font-bold">Bus</p>
-          <img class="w-5 h-4" src="./images/bus-logo.png" alt="bus-logo" />
-        </div>
-      </div>
-    </nav>
-    <!-- navbar ends here -->
+      </section>
+      <!-- banner section ends here -->
+    </main>
   </body>
 </html>
