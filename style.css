@@ -14,7 +14,6 @@
   font-variation-settings: "slnt" 0;
 }
 .seat-background {
-  background-color: #f7f8f8;
   border-radius: 12px;
   padding-top: 17px;
   padding-bottom: 17px;
@@ -22,4 +21,8 @@
   padding-right: 45px;
   width: 110px;
   height: 56px;
+  cursor: pointer;
+}
+.seat-background-color {
+  background-color: #f7f8f8;
 }

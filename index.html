@@ -66,11 +66,11 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="text-3xl raleway font-extrabold text-[#030712]"
-              >M-Travels</a
-            >
+            <div class="text-3xl raleway font-extrabold text-[#030712]">
+              <p>M-Travels</p>
+            </div>
           </div>
-          <div class="navbar-center hidden lg:flex mr-[250px]">
+          <div class="navbar-center hidden lg:flex justify-between mr-[250px]">
             <ul
               class="menu menu-horizontal px-1 raleway font-medium text-[#030712B3] opacity-75"
             >
@@ -137,19 +137,19 @@
           <div
             class="flex gap-4 bg-[#FFFFFF] rounded-3xl p-10 border-b-2 border-[#1DD100]"
           >
-            <img src="./images/people.png" alt="" />
+            <img src="./images/ticket-cupon.png" alt="" />
             <div class="gap-2">
-              <h1 class="inter font-bold text-4xl text-[#030712]">500K+</h1>
-              <p>Registered users</p>
+              <h1 class="inter font-bold text-4xl text-[#030712]">1.7 lacks</h1>
+              <p>Tickets sold</p>
             </div>
           </div>
           <div
             class="flex gap-4 bg-[#FFFFFF] rounded-3xl p-10 border-b-2 border-[#1DD100]"
           >
-            <img src="./images/people.png" alt="" />
+            <img src="./images/stoppage.png" alt="" />
             <div class="gap-2">
-              <h1 class="inter font-bold text-4xl text-[#030712]">500K+</h1>
-              <p>Registered users</p>
+              <h1 class="inter font-bold text-4xl text-[#030712]">80K+</h1>
+              <p>Rental partners</p>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@
         <h1 class="text-center raleway font-bold text-[40px] text-[#030712]">
           Best offers for you
         </h1>
-        <div class="flex flex-col lg:flex-row justify-between gap-5 mt-8">
+        <div class="flex flex-col lg:flex-row justify-center gap-7 mt-8">
           <div
             class="flex justify-between w-[570px] px-[52px] py-[52px] gap-5 bg-[#FFBF0F] rounded-3xl"
           >
@@ -253,7 +253,7 @@
                 >
                   <img class="w-5 h-5" src="./images/seat-green.png" alt="" />
                   <p class="inter font-medium text-lg text-[#1DD100]">
-                    <span>40</span> Seats left
+                    <span id="total-seat"></span> Seats left
                   </p>
                 </div>
               </div>
@@ -346,73 +346,73 @@
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>A</div>
-                <div class="seat-background">A1</div>
-                <div class="seat-background">A2</div>
-                <div class="seat-background">A3</div>
-                <div class="seat-background">A4</div>
+                <div class="seat-background seat-background-color seat">A1</div>
+                <div class="seat-background seat-background-color seat">A2</div>
+                <div class="seat-background seat-background-color seat">A3</div>
+                <div class="seat-background seat-background-color seat">A4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>B</div>
-                <div class="seat-background">B1</div>
-                <div class="seat-background">B2</div>
-                <div class="seat-background">B3</div>
-                <div class="seat-background">B4</div>
+                <div class="seat-background seat-background-color seat">B1</div>
+                <div class="seat-background seat-background-color seat">B2</div>
+                <div class="seat-background seat-background-color seat">B3</div>
+                <div class="seat-background seat-background-color seat">B4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>C</div>
-                <div class="seat-background">C1</div>
-                <div class="seat-background">C2</div>
-                <div class="seat-background">C3</div>
-                <div class="seat-background">C4</div>
+                <div class="seat-background seat-background-color seat">C1</div>
+                <div class="seat-background seat-background-color seat">C2</div>
+                <div class="seat-background seat-background-color seat">C3</div>
+                <div class="seat-background seat-background-color seat">C4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>D</div>
-                <div class="seat-background">D1</div>
-                <div class="seat-background">D2</div>
-                <div class="seat-background">D3</div>
-                <div class="seat-background">D4</div>
+                <div class="seat-background seat-background-color seat">D1</div>
+                <div class="seat-background seat-background-color seat">D2</div>
+                <div class="seat-background seat-background-color seat">D3</div>
+                <div class="seat-background seat-background-color seat">D4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>E</div>
-                <div class="seat-background">E1</div>
-                <div class="seat-background">E2</div>
-                <div class="seat-background">E3</div>
-                <div class="seat-background">E4</div>
+                <div class="seat-background seat-background-color seat">E1</div>
+                <div class="seat-background seat-background-color seat">E2</div>
+                <div class="seat-background seat-background-color seat">E3</div>
+                <div class="seat-background seat-background-color seat">E4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>F</div>
-                <div class="seat-background">F1</div>
-                <div class="seat-background">F2</div>
-                <div class="seat-background">F3</div>
-                <div class="seat-background">F4</div>
+                <div class="seat-background seat-background-color seat">F1</div>
+                <div class="seat-background seat-background-color seat">F2</div>
+                <div class="seat-background seat-background-color seat">F3</div>
+                <div class="seat-background seat-background-color seat">F4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>G</div>
-                <div class="seat-background">G1</div>
-                <div class="seat-background">G2</div>
-                <div class="seat-background">G3</div>
-                <div class="seat-background">G4</div>
+                <div class="seat-background seat-background-color seat">G1</div>
+                <div class="seat-background seat-background-color seat">G2</div>
+                <div class="seat-background seat-background-color seat">G3</div>
+                <div class="seat-background seat-background-color seat">G4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>H</div>
-                <div class="seat-background">H1</div>
-                <div class="seat-background">H2</div>
-                <div class="seat-background">H3</div>
-                <div class="seat-background">H4</div>
+                <div class="seat-background seat-background-color seat">H1</div>
+                <div class="seat-background seat-background-color seat">H2</div>
+                <div class="seat-background seat-background-color seat">H3</div>
+                <div class="seat-background seat-background-color seat">H4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>I</div>
-                <div class="seat-background">I1</div>
-                <div class="seat-background">I2</div>
-                <div class="seat-background">I3</div>
-                <div class="seat-background">I4</div>
+                <div class="seat-background seat-background-color seat">I1</div>
+                <div class="seat-background seat-background-color seat">I2</div>
+                <div class="seat-background seat-background-color seat">I3</div>
+                <div class="seat-background seat-background-color seat">I4</div>
               </div>
               <div class="flex items-center justify-between mt-3">
                 <div>J</div>
-                <div class="seat-background">J1</div>
-                <div class="seat-background">J2</div>
-                <div class="seat-background">J3</div>
-                <div class="seat-background">J4</div>
+                <div class="seat-background seat-background-color seat">J1</div>
+                <div class="seat-background seat-background-color seat">J2</div>
+                <div class="seat-background seat-background-color seat">J3</div>
+                <div class="seat-background seat-background-color seat">J4</div>
               </div>
             </div>
           </div>
@@ -554,5 +554,6 @@
       </div>
     </footer>
     <!-- footer section ends here -->
+    <script src="./index.js"></script>
   </body>
 </html>
