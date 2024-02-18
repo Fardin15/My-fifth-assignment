@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-white">
     <header>
       <!-- navbar starts here -->
       <nav class="bg-white container mx-auto p-3">
@@ -90,7 +90,7 @@
     <main>
       <!-- banner section starts here -->
       <section
-        class="bg-[url(./images/banner.png)] bg-cover bg-no-repeat bg-center container mx-auto p-[70px] rounded-[32px]"
+        class="bg-[url(./images/banner.png)] bg-cover bg-no-repeat bg-center container mx-auto p-[70px] rounded-[32px] h-[550px] relative"
       >
         <div class="flex flex-col justify-center items-center">
           <h1
@@ -112,8 +112,93 @@
             Buy Tickets
           </button>
         </div>
+        <div class="absolute flex gap-6 bottom-[-60px]">
+          <div
+            class="flex gap-4 bg-[#FFFFFF] rounded-3xl p-10 border-b-2 border-[#1DD100]"
+          >
+            <img src="./images/people.png" alt="" />
+            <div class="gap-2">
+              <h1 class="inter font-bold text-4xl text-[#030712]">500K+</h1>
+              <p>Registered users</p>
+            </div>
+          </div>
+          <div
+            class="flex gap-4 bg-[#FFFFFF] rounded-3xl p-10 border-b-2 border-[#1DD100]"
+          >
+            <img src="./images/people.png" alt="" />
+            <div class="gap-2">
+              <h1 class="inter font-bold text-4xl text-[#030712]">500K+</h1>
+              <p>Registered users</p>
+            </div>
+          </div>
+          <div
+            class="flex gap-4 bg-[#FFFFFF] rounded-3xl p-10 border-b-2 border-[#1DD100]"
+          >
+            <img src="./images/people.png" alt="" />
+            <div class="gap-2">
+              <h1 class="inter font-bold text-4xl text-[#030712]">500K+</h1>
+              <p>Registered users</p>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- banner section ends here -->
+      <!-- offers section starts here -->
+      <section class="container mx-auto mt-28 flex flex-col justify-center">
+        <h1 class="text-center raleway font-bold text-[40px] text-[#030712]">
+          Best offers for you
+        </h1>
+        <div class="flex justify-evenly gap-5 mt-8">
+          <div
+            class="flex justify-between w-[570px] px-[52px] py-[52px] gap-5 bg-[#FFBF0F] rounded-3xl"
+          >
+            <div class="inter">
+              <h1 class="font-black text-[40px] text-[#030712CC]">15% OFF</h1>
+              <p class="font-semibold text-xl text-[#030712CC] mt-2">
+                on your next purchase
+              </p>
+              <p class="font-medium text-lg text-[#03071280] mt-3">
+                use by January 2024
+              </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="raleway font-bold text-3xl text-[#030712]">NEW15</h1>
+              <p class="raleway font-medium text-xl text-[#03071266]">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-between w-[570px] px-[52px] py-[52px] gap-5 bg-[#F78C9C] rounded-3xl"
+          >
+            <div class="inter">
+              <h1 class="font-black text-[40px] text-[#030712CC]">20% OFF</h1>
+              <p class="font-semibold text-xl text-[#030712CC] mt-2">
+                on your next purchase
+              </p>
+              <p class="font-medium text-lg text-[#03071280] mt-3">
+                use by January 2024
+              </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="raleway font-bold text-3xl text-[#030712]">
+                Couple20
+              </h1>
+              <p class="raleway font-medium text-xl text-[#03071266]">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-10">
+          <button
+            class="btn w-[300px] h-[65px] bg-white border-2 border-[#1DD100] raleway font-bold text-xl text-[#1DD100] py-5 px-7 rounded-xl"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- offers section ends here -->
     </main>
   </body>
 </html>
