@@ -33,7 +33,7 @@
   <body>
     <header>
       <!-- navbar starts here -->
-      <nav class="bg-white container mx-auto">
+      <nav class="bg-white container mx-auto p-3">
         <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown">
@@ -63,8 +63,7 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a
-              class="btn btn-ghost text-xl raleway font-extrabold text-[#030712]"
+            <a class="text-xl raleway font-extrabold text-[#030712]"
               >M-Travels</a
             >
           </div>
@@ -79,7 +78,7 @@
             </ul>
           </div>
           <div
-            class="space-x-3 py-4 px-7 bg-[#1DD1001A] min-w-28 rounded-2xl border-2 border-lime-300 h-[56px]"
+            class="btn space-x-3 py-4 px-7 bg-[#1DD1001A] min-w-28 rounded-2xl border-2 border-lime-300 h-[56px]"
           >
             <p class="text-[#1DD100] font-bold">Bus</p>
             <img class="w-5 h-4" src="./images/bus-logo.png" alt="bus-logo" />
@@ -91,15 +90,27 @@
     <main>
       <!-- banner section starts here -->
       <section
-        class="bg-[url(./images/banner.png)] bg-cover bg-no-repeat bg-center container mx-auto min-h-screen"
+        class="bg-[url(./images/banner.png)] bg-cover bg-no-repeat bg-center container mx-auto p-[70px] rounded-[32px]"
       >
         <div class="flex flex-col justify-center items-center">
-          <h1>End-to-End Travel with <span>M Paribahan</span></h1>
-          <p>
+          <h1
+            class="raleway font-extrabold text-6xl text-center text-white mb-4"
+          >
+            End-to-End Travel with <br /><span class="text-[#1DD100]"
+              >M Paribahan</span
+            >
+          </h1>
+          <p
+            class="text-center inter font-normal text-lg opacity-75 text-white max-w-[600px] mb-8"
+          >
             Yes, you can run unit tests and view the results directly within the
             app. The integrated testing features allow for a streamlined .
           </p>
-          <button class="btn btn-accent">Buy Tickets</button>
+          <button
+            class="btn bg-[#1DD100] rounded-xl py-3 px-7 raleway font-bold text-xl text-[#030712] h-16"
+          >
+            Buy Tickets
+          </button>
         </div>
       </section>
       <!-- banner section ends here -->
