@@ -32,7 +32,7 @@ for (let i = 0; i < seatButtons.length; i++) {
         discountPrice = newTotalPrice - (newTotalPrice * 20) / 100;
         grandTotal.innerText = parseInt(discountPrice);
       } else {
-        alert("buy four ticket for using coupon");
+        alert("Buy only four ticket for using coupon");
       }
     });
   });
