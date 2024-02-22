@@ -8,7 +8,8 @@ for (let i = 0; i < seatButtons.length; i++) {
     seatButton.classList.add("bg-[#1DD100]");
     // increase seatcount
     seatCount += 1;
-    document.getElementById("seat-count").innerText = seatCount;
+    const newSeatCount = document.getElementById("seat-count");
+    newSeatCount.innerText = seatCount;
 
     totalSeatNumber -= 1;
     document.getElementById("total-seat").innerText = totalSeatNumber;
@@ -43,7 +44,8 @@ for (let i = 0; i < seatButtons.length; i++) {
       const coupon = document.getElementById("coupon-input").value;
       const couponValue = coupon.split(" ").join("").toUpperCase();
       const grandTotal = document.getElementById("grand-total");
-      if (newSeatCount.innerText === "4" && couponValue === "NEW15") {
+      if (couponValue === "NEW15") {
+        // newSeatCount.innerText === "4" &&
         const discountPrice = newTotalPrice - (newTotalPrice * 15) / 100;
         grandTotal.innerText = parseInt(discountPrice);
       } else if (newSeatCount.innerText === "4" && couponValue === "COUPLE20") {
