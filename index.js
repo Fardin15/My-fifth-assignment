@@ -6,10 +6,9 @@ for (let i = 0; i < seatButtons.length; i++) {
 
   seatButton.addEventListener("click", function () {
     seatButton.classList.add("bg-[#1DD100]");
-
-    const newSeatCount = document.getElementById("seat-count");
+    // increase seatcount
     seatCount += 1;
-    newSeatCount.innerText = seatCount;
+    document.getElementById("seat-count").innerText = seatCount;
 
     totalSeatNumber -= 1;
     document.getElementById("total-seat").innerText = totalSeatNumber;
@@ -18,6 +17,25 @@ for (let i = 0; i < seatButtons.length; i++) {
     const totalPrice = document.getElementById("total-price");
     const newTotalPrice = seatCount * 550;
     totalPrice.innerText = newTotalPrice;
+    // listing
+    const seatName = seatButton.innerText;
+
+    const listContainer = document.getElementById("list-container");
+    const div = document.createElement("div");
+    div.classList.add("list-div");
+
+    const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
+    const p3 = document.createElement("p");
+
+    p1.innerText = seatName;
+    p2.innerText = "business";
+    p3.innerText = 550;
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
+    listContainer.appendChild(div);
+
     // coupon input
     const apply = document.getElementById("apply");
     apply.addEventListener("click", function () {

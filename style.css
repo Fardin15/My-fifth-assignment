@@ -26,3 +26,15 @@
 .seat-background-color {
   background-color: #f7f8f8;
 }
+
+.list-div {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #030712;
+  border-bottom: 2px;
+  border-color: #03071233;
+}
