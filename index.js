@@ -10,6 +10,11 @@ for (let i = 0; i < seatButtons.length; i++) {
     seatCount += 1;
     const newSeatCount = document.getElementById("seat-count");
     newSeatCount.innerText = seatCount;
+    if (seatCount > 4) {
+      alert("you can't select more than four seats");
+      seatButton.setAttribute("disabled");
+      return;
+    }
 
     totalSeatNumber -= 1;
     document.getElementById("total-seat").innerText = totalSeatNumber;
