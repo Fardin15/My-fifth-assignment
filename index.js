@@ -5,7 +5,6 @@ for (let i = 0; i < seatButtons.length; i++) {
   const seatButton = seatButtons[i];
 
   seatButton.addEventListener("click", function () {
-    seatButton.classList.add("bg-[#1DD100]");
     // increase seatcount
     seatCount += 1;
     const newSeatCount = document.getElementById("seat-count");
@@ -15,6 +14,7 @@ for (let i = 0; i < seatButtons.length; i++) {
       seatButton.setAttribute("disabled");
       return;
     }
+    seatButton.classList.add("bg-[#1DD100]");
 
     totalSeatNumber -= 1;
     document.getElementById("total-seat").innerText = totalSeatNumber;
