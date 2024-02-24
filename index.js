@@ -5,10 +5,11 @@ for (let i = 0; i < seatButtons.length; i++) {
   const seatButton = seatButtons[i];
 
   seatButton.addEventListener("click", function () {
-    // increase seatcount
+    // increase seat count
     seatCount += 1;
     const newSeatCount = document.getElementById("seat-count");
     newSeatCount.innerText = seatCount;
+    const convertedSeat = parseInt(newSeatCount.innerText);
     if (seatCount > 4) {
       alert("you can't select more than four seats");
       seatButton.setAttribute("disabled");
@@ -44,28 +45,27 @@ for (let i = 0; i < seatButtons.length; i++) {
     grandTotal.innerText = newTotalPrice;
 
     // coupon input
+    const couponDiv = document.getElementById("coupon-div");
     const apply = document.getElementById("apply");
     apply.addEventListener("click", function () {
       // get value from input
       const coupon = document.getElementById("coupon-input").value;
       const couponValue = coupon.split(" ").join("").toUpperCase();
+
       //  grandTotal = document.getElementById("grand-total");
-      if (newSeatCount.innerText === "4" && couponValue === "NEW15") {
+      if (convertedSeat === 4 && couponValue === "NEW15") {
         const discountPrice = newTotalPrice - (newTotalPrice * 15) / 100;
         grandTotal.innerText = parseInt(discountPrice);
-      } else if (newSeatCount.innerText === "4" && couponValue === "COUPLE20") {
+        couponDiv.classList.add("hidden");
+      } else if (convertedSeat === 4 && couponValue === "COUPLE20") {
         discountPrice = newTotalPrice - (newTotalPrice * 20) / 100;
         grandTotal.innerText = parseInt(discountPrice);
-      } else {
-        alert("Buy only four ticket for using coupon");
+        couponDiv.classList.add("hidden");
       }
+
+      // else {
+      //   alert("Buy only four ticket for using coupon");
+      // }
     });
   });
-}
-
-const number = document.getElementById("number").value;
-const takenNumber = parseInt(number);
-if (typeof takenNumber === "number") {
-  const nextBtn = document.getElementById("next-btn");
-  nextBtn.classList.remove("hidden");
 }
