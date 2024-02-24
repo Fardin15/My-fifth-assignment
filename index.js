@@ -24,11 +24,9 @@ for (let i = 0; i < seatButtons.length; i++) {
     const listContainer = document.getElementById("list-container");
     const div = document.createElement("div");
     div.classList.add("list-div");
-
     const p1 = document.createElement("p");
     const p2 = document.createElement("p");
     const p3 = document.createElement("p");
-
     p1.innerText = seatName;
     p2.innerText = "business";
     p3.innerText = 550;
@@ -44,8 +42,8 @@ for (let i = 0; i < seatButtons.length; i++) {
       const coupon = document.getElementById("coupon-input").value;
       const couponValue = coupon.split(" ").join("").toUpperCase();
       const grandTotal = document.getElementById("grand-total");
-      if (couponValue === "NEW15") {
-        // newSeatCount.innerText === "4" &&
+      if (newSeatCount.innerText === "4" && couponValue === "NEW15") {
+        
         const discountPrice = newTotalPrice - (newTotalPrice * 15) / 100;
         grandTotal.innerText = parseInt(discountPrice);
       } else if (newSeatCount.innerText === "4" && couponValue === "COUPLE20") {
