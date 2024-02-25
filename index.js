@@ -12,7 +12,7 @@ for (let i = 0; i < seatButtons.length; i++) {
     const convertedSeat = parseInt(newSeatCount.innerText);
     if (seatCount > 4) {
       alert("you can't select more than four seats");
-      seatButton.setAttribute("disabled");
+      seatButton.setAttribute("attribute", "disabled");
       return;
     }
     seatButton.classList.add("bg-[#1DD100]");
@@ -21,9 +21,14 @@ for (let i = 0; i < seatButtons.length; i++) {
     document.getElementById("total-seat").innerText = totalSeatNumber;
 
     // total price
-    const totalPrice = document.getElementById("total-price").innerText;
+    const totalPrice = document.getElementById("total-price");
     const newTotalPrice = seatCount * 550;
     totalPrice.innerText = newTotalPrice;
+
+    // const convertTotalPrice = parseInt(totalPrice.innerText);
+    // totalPrice.innerText = newTotalPrice;
+    // // totalPrice.innerText = newTotalPrice;
+    // console.log(typeof totalPrice.innerText);
     // listing
     const seatName = seatButton.innerText;
 
