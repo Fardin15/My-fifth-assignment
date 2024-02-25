@@ -9,8 +9,8 @@ for (const seatButton of seatButtons) {
     newSeatCount.innerText = seatCount;
     const convertedSeat = parseInt(newSeatCount.innerText);
     if (seatCount > 4) {
+      seatButton.setAttribute("disabled", false);
       alert("you can't select more than four seats");
-      seatButton.setAttribute("attribute", "disabled");
       return;
     }
     seatButton.classList.add("bg-[#1DD100]");
