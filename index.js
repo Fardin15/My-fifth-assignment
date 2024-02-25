@@ -1,9 +1,7 @@
 const seatButtons = document.querySelectorAll(".seat-name");
 let totalSeatNumber = 40;
 let seatCount = 0;
-for (let i = 0; i < seatButtons.length; i++) {
-  const seatButton = seatButtons[i];
-
+for (const seatButton of seatButtons) {
   seatButton.addEventListener("click", function () {
     // increase seat count
     seatCount += 1;
@@ -25,11 +23,6 @@ for (let i = 0; i < seatButtons.length; i++) {
     const newTotalPrice = seatCount * 550;
     totalPrice.innerText = newTotalPrice;
 
-    // const convertTotalPrice = parseInt(totalPrice.innerText);
-    // totalPrice.innerText = newTotalPrice;
-    // // totalPrice.innerText = newTotalPrice;
-    // console.log(typeof totalPrice.innerText);
-    // listing
     const seatName = seatButton.innerText;
 
     const listContainer = document.getElementById("list-container");
